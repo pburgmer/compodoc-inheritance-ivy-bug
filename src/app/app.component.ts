@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import {Component, Directive, Input} from '@angular/core';
+
+// @Directive()
+// export abstract class Base {
+//   @Input()
+//   inheritedInput: number | undefined;
+// }
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: '<app-child></app-child>'
 })
 export class AppComponent {
-  title = 'compodoc-inheritance-bug';
 }
+
